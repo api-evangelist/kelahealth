@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: https://kelahealth.com/privacy-policy
+notes: >-
+  kelaHealth publishes no public OpenAPI or developer documentation, so no
+  cross-cutting protocol standards (oauth2, oidc, fhir, rfc9457, pagination,
+  idempotency) can be derived from a spec. The only publicly asserted
+  conformance is a HIPAA compliance program, evidenced by a HIPAA Seal of
+  Compliance (verified by Compliancy Group) displayed on the company website.
+standards:
+- id: hipaa
+  conforms: true
+  evidence: HIPAA Seal of Compliance (Compliancy Group) displayed on kelahealth.com privacy-policy and product pages
+  source: https://kelahealth.com/privacy-policy
+- id: oauth2
+  conforms: false
+  evidence: no public OpenAPI or auth documentation
+- id: fhir-r4
+  conforms: false
+  evidence: EHR integration referenced but no published FHIR conformance
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no public API specification
