@@ -1,7 +1,30 @@
 aid: kelahealth
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kelahealth.png
 name: kelaHealth
-description: kelaHealth is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  kelaHealth is a healthcare AI company that improves surgical outcomes through
+  its Surgical Intelligence Service, an AI-enabled API delivering patient-specific
+  predictive insights at critical decision points across the perioperative
+  process. Models trained on millions of surgical procedures predict individual
+  patient risk across nine major complication categories, identify modifiable
+  factors, and recommend stratified interventions tailored to hospital standards.
+  The service integrates into existing medtech and healthcare software
+  applications using EHR, robotic, and social-determinants-of-health data to help
+  providers improve growth, efficiency, quality, and safety. kelaHealth is HIPAA
+  compliant and backed by Techstars. It does not publish a public developer
+  portal, OpenAPI specification, or SDKs; its API is delivered through partner
+  integrations.
 url: https://raw.githubusercontent.com/api-evangelist/kelahealth/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Surgery
+- Artificial Intelligence
+- Predictive Analytics
+- Perioperative
+- Machine Learning
+- MedTech
+- Patient Risk
+- HIPAA
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +53,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kelahealth-domain-security.yml
 - type: Website
   url: https://kelahealth.com/
+- type: Product
+  url: https://kelahealth.com/product-1
+- type: PrivacyPolicy
+  url: https://kelahealth.com/privacy-policy
+- type: TermsOfService
+  url: https://kelahealth.com/terms-of-use
+- type: Compliance
+  url: https://kelahealth.com/privacy-policy
+- type: Conformance
+  url: conformance/kelahealth-conformance.yml
+- type: LLMsTxt
+  url: llms/kelahealth-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
